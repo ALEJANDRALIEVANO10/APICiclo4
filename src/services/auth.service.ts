@@ -18,12 +18,12 @@ export class AuthService {
    * Add service methods here
    */
   //Generacion de claves
-  GenerarClave() {
+  generarClave() {
     let clave = generator(8, false);
     return clave;
   }
 
-  CifrarClave(clave: String) {
+  cifrarClave(clave: String) {
     let claveCifrada = cryptoJS.MD5(clave).toString();
     return claveCifrada;
   }
