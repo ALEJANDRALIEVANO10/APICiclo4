@@ -31,13 +31,13 @@ export class Aeropuerto extends Entity {
     type: 'string',
     required: true,
   })
-  coordenada_x: string;
+  coordx: string;
 
   @property({
     type: 'string',
     required: true,
   })
-  coordenada_y: string;
+  coordy: string;
 
   @property({
     type: 'string',
